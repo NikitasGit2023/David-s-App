@@ -1,0 +1,102 @@
+<nav class="navbar bg-dark border-bottom border-body w-100" style="height: 100px;">
+  <div class="d-flex w-100 align-items-center justify-content-between px-3">
+
+    <!-- Left Logo -->
+    <div class="d-flex align-items-center">
+      <img src="/davids_logo.png" width="80" height="80" />
+    </div>
+
+    <!-- Center Title -->
+    <div class="text-white fw-bold fs-4 text-center flex-grow-1">
+      𝓓𝓪𝓿𝓲𝓭'𝓼 𝓒𝓸𝓯𝓯𝓮 𝓗𝓸𝓾𝓼𝓮
+    </div>
+
+    <!-- Right Instagram -->
+    <a href="https://www.instagram.com/davidscafe_/" 
+       target="_blank" 
+       class="d-flex align-items-center">
+      <img src="/instagram-logo.png" width="60" height="60" alt="Instagram"/>
+      <span class="text-white ms-2 fs-5" style="font-size: 20px;">Подписывайся</span>
+    </a>
+
+  </div>
+</nav>
+
+
+
+<!-- MAIN MENU CARDS -->
+<section class="menu-section container" *ngIf="!activeCategory">
+  <div class="row justify-content-center align-items-center" style="min-height: 50vh;">
+    <div 
+      class="col-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+      *ngFor="let category of categories"
+      (click)="openCategory(category.key)">
+      <div class="card category-card">
+        <div class="card-body d-flex justify-content-center align-items-center">
+          <h3 class="card-title">{{ category.name }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CATEGORY ITEMS -->
+<!-- CATEGORY ITEMS -->
+<section class="menu-section container" *ngIf="activeCategory">
+
+  <!-- Back Button above items -->
+  <div class="mb-3">
+    <button class="btn btn-outline-secondary back-btn d-flex align-items-center" (click)="goBack()">
+      <i class="bi bi-arrow-left me-2" style="font-size: 1.2rem;"></i>
+      Назад
+    </button>
+  </div>
+
+  <!-- Scrollable Menu Items for small screens -->
+  <div class="menu-items-container">
+    <div class="row justify-content-center">
+      <div 
+        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+        *ngFor="let item of menuItems[activeCategory] || []" 
+        (click)="openItem(item)">
+      
+        <div class="card text-center h-100" style="max-width: 260px; width: 100%; cursor: pointer;">
+          <img [src]="item.imageUrl" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="price text-muted">{{ item.price | number }} UZS</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- No items message -->
+      <div *ngIf="(menuItems[activeCategory]?.length || 0) === 0" class="col-12 text-center mt-4" style="font-size:large; color: white;">
+        Временно недоступно
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- MODAL -->
+<div class="modal" *ngIf="selectedItem" (click)="closeItem()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close" (click)="closeItem()">×</button>
+    <img [src]="selectedItem.imageUrl" [alt]="selectedItem.name" />
+
+    <div class="modal-header-row">
+      <h2>{{ selectedItem.name }}</h2>
+      <p class="price">{{ selectedItem.price | number }} UZS</p>
+    </div>
+
+    <p *ngIf="selectedItem.description">{{ selectedItem.description }}</p>
+
+    <div *ngIf="selectedItem.ingredients?.length">
+      <p><b>ингредиенты:</b> {{ selectedItem.ingredients.join(', ') }}</p>
+    </div>
+  </div>
+</div>

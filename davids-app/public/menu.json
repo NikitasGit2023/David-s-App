@@ -1,0 +1,416 @@
+{
+  "croissants": [
+    {
+      "name": "круассан слососем",
+      "ingredients": "круассан, лосось, сливочный сыр, яйцо, авокадо, шпинат",
+      "price": "75000",
+       "imageUrl": "/butter-croisant.PNG" 
+    },
+    {
+      "name": "круассан с курицей",
+      "ingredients": "круассан, курица, сливочный сыр, помидор, айсберг, горчичный соус",
+      "price": "45000",
+       "imageUrl": "/butter-croisant.PNG" 
+      
+    },
+    {
+      "name": "круассан с индейкой",
+      "ingredients": "круассан, индейка, сливочный сыр, помидор, айсберг, горчичный соус",
+      "price": "50000",
+       "imageUrl": "/butter-croisant.PNG" 
+    },
+    {
+      "name": "круассан с говядиной",
+      "ingredients": "круассан, говядина, сливочный сыр, помидор, айсберг, горчичный соус",
+      "price": "60000",
+       "imageUrl": "/butter-croisant.PNG" 
+      
+    }
+  ],
+  "sandwiches": [
+    {
+      "name": "бейгл с лососем",
+      "ingredients": "бейгл, лосось, сливочный сыр, черри, авокадо, айсберг",
+      "price": "70000",
+       "imageUrl": "/sandwiches/salmon-bagel.PNG" 
+    },
+    {
+      "name": "бейгл с курицей",
+      "ingredients": "бейгл, курица, сливочный сыр, помидор, айсберг, соус песто, горчичный соус",
+      "price": "40000",
+       "imageUrl": "/sandwiches/chicken-bagel.PNG" 
+    },
+    {
+      "name": "бейгл с индейкой",
+      "ingredients": "бейгл, индейка, сливочный сыр, помидор, айсберг, соус песто, горчичный соус",
+      "price": "45000",
+       "imageUrl": "/empty.png" 
+    },
+    {
+      "name": "бейгл с говядиной",
+      "ingredients": "бейгл, говядина, сливочный сыр, помидор, айсберг, горчичный соус",
+      "price": "55000",
+       "imageUrl": "/empty.png" 
+    },
+    {
+      "name": "тост классический",
+      "ingredients": "тостовый хлеб, сыр моцарелла, помидор, соус песто, шпинат",
+      "price": "40000",
+       "imageUrl": "/empty.png" 
+    },
+    {
+      "name": "тост с курицей",
+      "ingredients": "тостовый хлеб, курица, сыр моцарелла, сливочный сыр, помидор, шпинат, соус песто, горчичный соус",
+      "price": "40000",
+       "imageUrl": "/sandwiches/chicken-sandwich.png" 
+    },
+    {
+      "name": "тост с индейкой",
+      "ingredients": "тостовый хлеб, индейка, сыр моцарелла, сливочный сыр, помидор, шпинат, соус песто, горчичный соус",
+      "price": "45000",
+       "imageUrl": "/empty.png" 
+    },
+    {
+      "name": "тост с говядиной",
+      "ingredients": "тостовый хлеб, говядина, сыр моцарелла, сливочный сыр, помидор, шпинат, горчичный соус",
+      "price": "55000",
+       "imageUrl": "/empty.png" 
+    }
+  ],
+  "pizzas": [
+    {
+      "name": "Маргарита",
+      "ingredients": "томатный соус, сыр моцарелла, помидор, базилик",
+      "price": "60000",
+       "imageUrl": "/margarita.PNG"
+    },
+    {
+      "name": "Карбонара",
+      "ingredients": "сливочный соус, сыр моцарелла, индейка, черри, яйцо, пармезан",
+      "price": "85000",
+      "imageUrl": "/carbonara.PNG"
+    },
+    {
+      "name": "Капричеза",
+      "ingredients": "томатный соус, сыр моцарелла, шампиньоны, черри, вяленая говядина, маслины",
+      "price": "85000",
+       "imageUrl": "/empty.png" 
+    },
+    {
+      "name": "Диабло",
+      "ingredients": "томатный соус, сыр моцарелла, колбаски, охотничьи сосиски, красный лук, болгарский перец, халапеньо, соус табаско",
+      "price": "85000",
+       "imageUrl": "/empty.png" 
+    },
+    {
+      "name": "Пеперони",
+      "ingredients": "томатный соус, сыр моцарелла, колбаски пеперони, помидор, маслины",
+      "price": "80000",
+      "imageUrl": "/paparoni.PNG"
+    },
+    {
+      "name": "Четыре сыра",
+      "ingredients": "сливочный соус, сыр моцарелла, камамбер, Дор Блю, пармезан",
+      "price": "90000",
+      "imageUrl": "/empty.png" 
+
+    }
+    
+  ],
+  "breakfast": [
+
+    {
+  "name": "Утренний перекус",
+  "ingredients": "2 яйца, 2 охотничьи колбаски, бейгл, шпинат, соус",
+  "price": "40000",
+  "imageUrl": "/empty.png" 
+},
+{
+  "name": "Сырники",
+  "ingredients": "сырники, сметана, ягодный соус, нутелла",
+  "price": "45000",
+  "imageUrl": "/empty.png" 
+},
+{
+  "name": "Овсяная каша",
+  "ingredients": "",
+  "price": "25000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Манная каша",
+  "ingredients": "",
+  "price": "25000",
+  "imageUrl": "/empty.png"
+},
+
+
+{
+  "name": "Блинчики классические",
+  "ingredients": "3 блина, сгущённое молоко, сметана",
+  "price": "15000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Блинчик с нутеллой",
+  "ingredients": "блин, нутелла",
+  "price": "15000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Блинчик с вишней",
+  "ingredients": "блин, вишнёвое варенье",
+  "price": "15000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Блинчик с индейкой и курицей",
+  "ingredients": "картофельное пюре, индейка, курица",
+  "price": "25000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Блинчик с лососем",
+  "ingredients": "лосось, сливочный сыр, шпинат",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+
+{
+  "name": "Булочка вишнёвая",
+  "ingredients": "булочка, вишнёвая начинка",
+  "price": "30000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Булочка со сгущёнкой",
+  "ingredients": "булочка, сгущённое молоко",
+  "price": "30000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Растегай с картошкой и сыром",
+  "ingredients": "тесто, картофельное пюре, сыр",
+  "price": "35000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Сочник с творогом",
+  "ingredients": "тесто, творожная начинка",
+  "price": "35000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Синабон",
+  "ingredients": "булочка с корицей, сливочная глазурь",
+  "price": "50000",
+  "imageUrl": "/empty.png"
+}
+
+
+
+  ],
+  "coffe": [
+ 
+    {
+  "name": "Эспрессо",
+  "ingredients": "",
+  "price": "19000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Дабл Эспрессо",
+  "ingredients": "",
+  "price": "22000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Американо",
+  "ingredients": "",
+  "price": "20000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Дабл Американо",
+  "ingredients": "",
+  "price": "24000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Капучино",
+  "ingredients": "",
+  "price": "26000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Дабл Капучино",
+  "ingredients": "",
+  "price": "32000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Латте",
+  "ingredients": "",
+  "price": "28000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Раф",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Флэт Уайт",
+  "ingredients": "",
+  "price": "27000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Мокко",
+  "ingredients": "",
+  "price": "27000",
+  "imageUrl": "/empty.png"
+}
+
+
+],
+
+"tea":
+  [
+
+    {
+  "name": "Чёрный чай",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Зелёный чай",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Эрл Грей",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Дикая Вишня",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Жасмин",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Моргентау",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Молочный Улун",
+  "ingredients": "",
+  "price": "12000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Облепиховый чай",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Имбирный чай",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Фруктовый чай",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Ягодный чай",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Марокканский чай",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Молочный чай",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+},
+{
+  "name": "Чай Гармония",
+  "ingredients": "",
+  "price": "40000",
+  "imageUrl": "/empty.png"
+}
+
+  ],
+
+      "desserts": [
+    { 
+      "name": "Cан-Себастьян классический",
+      "ingredients": " ",
+      "price": "48000",
+       "imageUrl": "/desserts/classic-sebastian.PNG"
+    },
+    { 
+      "name": "Cан-Себастьян чёрная смородина",
+      "ingredients": " ",
+      "price": "55000",
+       "imageUrl": "/desserts/red-wallet-cake.PNG"
+    },
+    { 
+      "name": "Cан-Себастьян фисташковый",
+      "ingredients": " ",
+      "price": "60000",
+       "imageUrl": "/desserts/pistachio-sebastian.PNG"
+    },
+      { 
+      "name": "Медовик",
+      "ingredients": " ",
+      "price": "40000",
+       "imageUrl": "/desserts/honey-cake.PNG"
+    },
+    { 
+      "name": "Брауни",
+      "ingredients": " ",
+      "price": "55000",
+       "imageUrl": "/desserts/brownie-cake.PNG"
+    },
+     { 
+      "name": "Сырники",
+      "ingredients": "подаются со сметаной, ягодным соусом и нутеллой",
+      "price": "45000",
+       "imageUrl": "/desserts/russian-pancakes.PNG"
+  }
+
+ 
+    
+    
+    
+ 
+    
+  ]
+   
+  
+}
