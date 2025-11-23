@@ -7,13 +7,6 @@ header {
   margin: 1rem 0;
 }
 
-/*?*/
-.menu-section {
-  text-align: center;
-}
-
-
-
 /*navbar*/
 .custom-navbar {
   background-color: rgba(12, 2, 2, 0.65);
@@ -71,8 +64,6 @@ nav::-webkit-scrollbar {
 }
 
 
-
-
 /*cards-grid*/
 .category-card {
   background-color: rgba(240, 240, 240, 1); 
@@ -88,7 +79,6 @@ nav::-webkit-scrollbar {
   align-items: center;
 }
 
-
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -99,7 +89,6 @@ nav::-webkit-scrollbar {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
 }
 
-
 .card-img-top {
   transition: transform 0.3s ease;
 }
@@ -107,7 +96,6 @@ nav::-webkit-scrollbar {
 .card:hover .card-img-top {
   transform: scale(1.1); 
 }
-
 
 .card-title, .price {
   transition: color 0.3s ease;
@@ -118,7 +106,6 @@ nav::-webkit-scrollbar {
   color: goldenrod; 
 }
 
-
 .category-card .card-title {
   color: #000;
   font-weight: bold;
@@ -126,7 +113,6 @@ nav::-webkit-scrollbar {
   word-break: keep-all;
   padding: 0 10px;
   font-size: 1.5rem;
-  
 }
 
 
@@ -168,6 +154,13 @@ nav::-webkit-scrollbar {
   overflow: hidden; 
 }
 
+.menu-item-col {
+  flex: 1 1 45%; 
+  max-width: 45%;
+  min-width: 200px; 
+  display: flex;
+  justify-content: center;
+}
 
 .item img {
   width: 100%;
@@ -185,7 +178,6 @@ nav::-webkit-scrollbar {
   padding: 0.8rem;
   border-top: 1px solid #eee;
 }
-
 
 .item-content h3 {
   margin: 0.4rem 0 0.3rem;
@@ -213,20 +205,26 @@ nav::-webkit-scrollbar {
   font-weight: bold;
 }
 
-  .menu-items-container {
-  max-height: calc(100vh - 140px); 
-  overflow-y: auto;
-  padding-bottom: 1rem;
+.menu-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 1rem;
 }
 
-/* Optional adjustments for very small screens */
+.menu-item-col {
+  flex: 1 1 45%;     
+  max-width: 300px;  
+  min-width: 200px;   
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 576px) {
   .menu-items-container {
     max-height: calc(100vh - 120px);
   }
 
-
-/*responsive menu grid*/
 @media (max-width: 992px) {
   .item {
     flex: 1 1 calc(45% - 1rem);
@@ -239,10 +237,6 @@ nav::-webkit-scrollbar {
     height: auto;
   }
 }
-
-
-
-
 
 
 /*MODAL */
@@ -258,8 +252,6 @@ nav::-webkit-scrollbar {
   z-index: 1000;
   background: rgba(255, 255, 255, 0.3);
 backdrop-filter: blur(4px);
-
-  
 }
 
 .modal-content {
@@ -269,7 +261,6 @@ backdrop-filter: blur(4px);
   max-width: 400px;
   width: 90%;
 }
-
 
 .modal-content img {
   width: 100%;
@@ -330,8 +321,6 @@ backdrop-filter: blur(4px);
 }
 
 
-
-/* Fade animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
@@ -339,7 +328,6 @@ backdrop-filter: blur(4px);
 
 
 
-/* Modal responsive */
 @media (max-width: 480px) {
   .modal-content {
     padding: 1rem;

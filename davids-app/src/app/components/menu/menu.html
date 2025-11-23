@@ -46,29 +46,48 @@
       Назад
     </button>
   </div>
-
-  <div class="menu-items-container">
-    <div class="row justify-content-center">
-      <div 
-        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
-        *ngFor="let item of menuItems[activeCategory] || []" 
-        (click)="openItem(item)">
-      
-        <div class="card text-center h-100" style="max-width: 260px; width: 100%; cursor: pointer;">
-          <img [src]="item.imageUrl" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" />
-          <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <p class="price text-muted">{{ item.price | number }} UZS</p>
-          </div>
-        </div>
-      </div>
-      <div *ngIf="(menuItems[activeCategory]?.length || 0) === 0" class="col-12 text-center mt-4" style="font-size:large; color: white;">
-        Временно недоступно
+<!-- 
+<div class="menu-items-container">
+  <div
+    class="menu-item-col"
+    *ngFor="let item of menuItems[activeCategory] || []"
+    (click)="openItem(item)"
+  >
+    <div class="card text-center h-100" style="cursor: pointer; width: 100%;">
+      <img [src]="item.imageUrl" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <p class="price text-muted">{{ item.price | number }} UZS</p>
       </div>
     </div>
   </div>
-</section>
+</div>
 
+<div *ngIf="(menuItems[activeCategory]?.length || 0) === 0" class="text-center mt-4" style="font-size:large; color: white;">
+  Временно недоступно
+</div> -->
+
+<div class="menu-items-container">
+  <div
+    class="menu-item-col"
+    *ngFor="let item of menuItems[activeCategory!] || []"
+    (click)="openItem(item)"
+  >
+    <div class="card text-center h-100" style="cursor: pointer; width: 100%;">
+      <img [src]="item.imageUrl" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <p class="price text-muted">{{ item.price | number }} UZS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="activeCategory && (menuItems[activeCategory!]?.length || 0) === 0" 
+     class="text-center mt-4" 
+     style="font-size:large; color: white;">
+  Временно недоступно
+</div>
 
 
 <!--modal-->

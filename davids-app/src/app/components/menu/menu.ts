@@ -23,11 +23,15 @@ interface Category {
 })
 export class MenuComponent implements OnInit {
 
-  @ViewChild('navContainer') navContainer!: ElementRef;
+    ngOnInit(): void {
+    this.loadMenuFromJson();
+  }
 
   activeCategory: MenuKeys | null = null;
   selectedItem: MenuItem | null = null;
   menuItems: Partial<Record<MenuKeys, MenuItem[]>> = {};
+
+  @ViewChild('navContainer') navContainer!: ElementRef;
 
   categories: Category[] = [
     { key: 'breakfast', name: 'Завтрак', image: '/images/breakfast.jpg' },
@@ -68,10 +72,6 @@ export class MenuComponent implements OnInit {
     history.pushState(null, '');
   }
 
-
-  ngOnInit(): void {
-    this.loadMenuFromJson();
-  }
 
   loadMenuFromJson() {
     this.http.get<Partial<Record<MenuKeys, MenuItem[]>>>('/menu.json')
