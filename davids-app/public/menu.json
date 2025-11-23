@@ -82,13 +82,13 @@
       "name": "Маргарита",
       "ingredients": "томатный соус, сыр моцарелла, помидор, базилик",
       "price": "60000",
-       "imageUrl": "/margarita.PNG"
+       "imageUrl": "/pizza/margarita.PNG"
     },
     {
       "name": "Карбонара",
       "ingredients": "сливочный соус, сыр моцарелла, индейка, черри, яйцо, пармезан",
       "price": "85000",
-      "imageUrl": "/carbonara.PNG"
+      "imageUrl": "/pizza/carbonara.PNG"
     },
     {
       "name": "Капричеза",
@@ -106,7 +106,7 @@
       "name": "Пеперони",
       "ingredients": "томатный соус, сыр моцарелла, колбаски пеперони, помидор, маслины",
       "price": "80000",
-      "imageUrl": "/paparoni.PNG"
+      "imageUrl": "/pizza/paparoni.PNG"
     },
     {
       "name": "Четыре сыра",
