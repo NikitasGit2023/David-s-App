@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { MenuItem } from '../../services/menu';
 import { HostListener } from '@angular/core';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 type MenuKeys =  "breakfast" |'sandwiches' | 'croissants' | 'pizzas' | 'desserts' | 'coffe' |'tea' |'milkshakes' |'cold-beverages';
 
@@ -21,8 +22,6 @@ interface Category {
   imports: [CommonModule]
 })
 export class MenuComponent implements OnInit {
-
-
 
   @ViewChild('navContainer') navContainer!: ElementRef;
 
@@ -43,22 +42,29 @@ export class MenuComponent implements OnInit {
    
   ];
 
- constructor(
-    private http: HttpClient,
-    private location: Location
+  constructor(
+    private router: Router,
+    private ngLocation: Location,
+    private http: HttpClient
   ) {
-    // Push extra state so mobile back button stays inside the app
     history.pushState(null, '');
   }
+
 
   @HostListener('window:popstate', ['$event'])
   onPopState(event: Event) {
     event.preventDefault();
 
-    // Prevent exiting the app — return inside Angular navigation
-    this.location.back();
+    if (this.selectedItem) {
+      this.selectedItem = null;
+      return history.pushState(null, '');
+    }
 
-    // Optional: re-push the state so the next back press still works
+    if (this.activeCategory) {
+      this.activeCategory = null;
+      return history.pushState(null, '');
+    }
+
     history.pushState(null, '');
   }
 
