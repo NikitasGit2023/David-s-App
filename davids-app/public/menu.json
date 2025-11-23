@@ -62,7 +62,7 @@
       "name": "тост с курицей",
       "ingredients": "тостовый хлеб, курица, сыр моцарелла, сливочный сыр, помидор, шпинат, соус песто, горчичный соус",
       "price": "40000",
-       "imageUrl": "/sandwiches/chicken-sandwich.png" 
+       "imageUrl": "/sandwiches/chicken-toast.png" 
     },
     {
       "name": "тост с индейкой",
@@ -216,13 +216,13 @@
   "name": "Эспрессо",
   "ingredients": "",
   "price": "19000",
-  "imageUrl": "/empty.png"
+  "imageUrl": "/coffe/espresso.PNG"
 },
 {
   "name": "Дабл Эспрессо",
   "ingredients": "",
   "price": "22000",
-  "imageUrl": "/empty.png"
+  "imageUrl": "/coffe/double-espresso.PNG"
 },
 {
   "name": "Американо",
@@ -252,7 +252,7 @@
   "name": "Латте",
   "ingredients": "",
   "price": "28000",
-  "imageUrl": "/empty.png"
+  "imageUrl": "/coffe/latte.png"
 },
 {
   "name": "Раф",

@@ -1,17 +1,15 @@
 <nav class="navbar bg-dark border-bottom border-body w-100" style="height: 100px;">
   <div class="d-flex w-100 align-items-center justify-content-between px-3">
 
-    <!-- Left Logo -->
+  
     <div class="d-flex align-items-center">
       <img src="/davids_logo.png" width="80" height="80" />
     </div>
 
-    <!-- Center Title -->
     <div class="text-white fw-bold fs-4 text-center flex-grow-1">
       𝓓𝓪𝓿𝓲𝓭'𝓼
     </div>
 
-    <!-- Right Instagram -->
     <a href="https://www.instagram.com/davidscafe_/" 
        target="_blank" 
        class="d-flex align-items-center">
@@ -23,8 +21,7 @@
 </nav>
 
 
-
-<!-- MAIN MENU CARDS -->
+<!--menu categories-->>
 <section class="menu-section container" *ngIf="!activeCategory">
   <div class="row justify-content-center align-items-center" style="min-height: 50vh;">
     <div 
@@ -41,11 +38,8 @@
 </section>
 
 
-<!-- CATEGORY ITEMS -->
-<!-- CATEGORY ITEMS -->
+<!--category items-->
 <section class="menu-section container" *ngIf="activeCategory">
-
-  <!-- Back Button above items -->
   <div class="mb-3">
     <button class="btn btn-outline-secondary back-btn d-flex align-items-center" (click)="goBack()">
       <i class="bi bi-arrow-left me-2" style="font-size: 1.2rem;"></i>
@@ -53,7 +47,6 @@
     </button>
   </div>
 
-  <!-- Scrollable Menu Items for small screens -->
   <div class="menu-items-container">
     <div class="row justify-content-center">
       <div 
@@ -69,8 +62,6 @@
           </div>
         </div>
       </div>
-
-      <!-- No items message -->
       <div *ngIf="(menuItems[activeCategory]?.length || 0) === 0" class="col-12 text-center mt-4" style="font-size:large; color: white;">
         Временно недоступно
       </div>
@@ -80,9 +71,7 @@
 
 
 
-
-
-<!-- MODAL -->
+<!--modal-->
 <div class="modal" *ngIf="selectedItem" (click)="closeItem()">
   <div class="modal-content" (click)="$event.stopPropagation()">
     <button class="close" (click)="closeItem()">×</button>
