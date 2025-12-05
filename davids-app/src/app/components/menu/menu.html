@@ -39,12 +39,17 @@
 <br>
 
 <!--category images-->
-<div *ngIf="activeCategory?.pdf">
-  <embed
-    [src]="(activeCategory!.pdf + '#toolbar=0&navpanes=0&scrollbar=0') | safeUrl"
-    type="application/pdf"
-    class="card-img-top img-fluid"
-    style="object-fit: cover; height: 1000px; border:0;"
-  />
-</div>
+<ng-container *ngIf="activeCategory as category">
+  <div *ngIf="category.pdf?.length; else noPdfBlock">
+    <iframe
+      [src]="(category.pdf! + '#toolbar=0&navpanes=0&scrollbar=0') | safeUrl"
+      style="width: 100%; height: 1000px; border: none;"
+    ></iframe>
+  </div>
+</ng-container>
 
+<ng-template #noPdfBlock>
+  <div class="text-center text-white mt-4">
+    Временно недоступно
+  </div>
+</ng-template>
